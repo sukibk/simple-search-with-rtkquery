@@ -7,7 +7,8 @@ export const productsApi = createApi({
     endpoints: (builder) => ({
         getAllProducts: builder.query({
             query: (productType) => `products/search?q=${productType}`
-        })
+        }),
+        keepUnusedDataFor: 5
     })
     }
 )
